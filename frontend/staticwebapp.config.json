@@ -1,11 +1,10 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["*.css", "*.js", "*.png", "*.jpg", "*.svg", "*.ico", "*.json"]
+    "exclude": ["/.auth/*", "/api/*", "/*.{css,js,png,jpg,jpeg,gif,svg,ico,json}"]
   },
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
-    "Referrer-Policy": "strict-origin-when-cross-origin",
-    "Permissions-Policy": "camera=(), microphone=(), geolocation=()"
+    "Referrer-Policy": "strict-origin-when-cross-origin"
   }
 }
